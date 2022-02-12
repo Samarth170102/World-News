@@ -1,0 +1,50 @@
+Light
+highlightColor: Vx.white,
+baseColor: Color.fromARGB(246, 233, 233, 233),
+
+Dark
+highlightColor: Color.fromARGB(255, 124, 124, 124),
+baseColor: Color.fromARGB(255, 59, 59, 59),
+
+
+
+
+Top News:
+https://api.nytimes.com/svc/topstories/v2/home.json?api-key=3ckNEDQARKXcikjqh1CiUwnubTr55KcQ
+
+No Query Parameters
+Note: Take first 20 news on list not more than that,
+
+
+Recent News:
+https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=3ckNEDQARKXcikjqh1CiUwnubTr55KcQ
+
+Query Parameters:
+limit: 40
+offset: 0
+
+
+
+Popular News:
+https://api.nytimes.com/svc/mostpopular/v2/shared/1.json?api-key=3ckNEDQARKXcikjqh1CiUwnubTr55KcQ
+
+No Query Parameters
+
+
+Popular Books:
+
+https://api.nytimes.com/svc/books/v3/lists/current/{list}.json?api-key=3ckNEDQARKXcikjqh1CiUwnubTr55KcQ
+list: name of the section whom api will be called for
+
+Query Parameters:
+offset: 0&1
+
+
+
+Movie Reviews:
+
+https://api.nytimes.com/svc/movies/v2/reviews/all.json?api-key=3ckNEDQARKXcikjqh1CiUwnubTr55KcQ
+
+Query Parameters:
+offset: 0&1
+order: by-opening-date
